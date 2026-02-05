@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Chat</title>
+</head>
+<body>
+  <h2>Secure Chat</h2>
+
+  <input id="username" placeholder="Your name">
+  <input id="room" placeholder="Room ID">
+  <button onclick="join()">Join</button>
+
+  <div id="chat"></div>
+
+  <input id="message" placeholder="Message">
+  <button onclick="sendMessage()">Send</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/tweetnacl@1.0.3/nacl.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tweetnacl-util@0.15.1/nacl-util.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
